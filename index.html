@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta   charset="UTF-8">
+        <meta   http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta   name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/logo.png" type="image/x-icon">
+        <title>  Shopping Services </title>
+        <link   rel="stylesheet" href="style.css">
+                <!-- google font -->
+        <link   rel="preconnect" href="https://fonts.googleapis.com">
+        <link   rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link   href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,900&display=swap" 
+                rel="stylesheet">
+                <!-- font awesome cdn -->
+        <link   rel="stylesheet" 
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <!-- bootstrap -->
+        <!-- contact form css links -->
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <section    class="header">
+            <nav>
+                <a href="index.html">
+                    <img    src="images/logo.png">
+                </a>
+                <div    class="nav-links"   id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html"> HOME </a></li>
+                        <li><a href="#footer"> ABOUT </a></li>
+                        <li><a href="#contact"> CONTACT </a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars"   onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>Shop online with no limits  </h1>
+                <p> Send us the product you want to buy, 
+                    and we take care of the payement procces <br>    
+                </p>
+                <a class="hero-btn" href="#contact">CONTACT US TO KNOW MORE</a>
+        </section>
+
+        <!-- offer-->
+        <section    class="offer">
+            <h1> Services we offer</h1>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            
+            <div    class="row">
+                <div    class="offer-col">
+                    <h3> First   </h3>
+                    <p>   Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Error aut vero consectetur quam, unde dolorum, esse, optio
+                          laudantium culpa in fuga accusantium sunt molestiae earum tempore. 
+                          Sed magnam inventore consequatur.</p>
+                </div>
+                <div    class="offer-col">
+                    <h3> Second   </h3>
+                    <p>   Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Error aut vero consectetur quam, unde dolorum, esse, optio
+                          laudantium culpa in fuga accusantium sunt molestiae earum tempore. 
+                          Sed magnam inventore consequatur.</p>
+                </div>
+                <div    class="offer-col">
+                    <h3> Third   </h3>
+                    <p>   Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Error aut vero consectetur quam, unde dolorum, esse, optio
+                          laudantium culpa in fuga accusantium sunt molestiae earum tempore. 
+                          Sed magnam inventore consequatur.</p>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+        <!-- Start Contact Section -->
+
+    <div    class="w3-container w3-light-grey w3-padding-32 w3-padding-large contact-us" 
+            id="contact">
+        <div class="w3-content" >
+            <h1 class="contact-title">Contact Us</h1>
+        
+            <script type="text/javascript">var submitted=false;</script>
+            
+            <!--Update the URL for thank you page on form submit -->
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+            onload="if(submitted) {window.location='#';}"></iframe> 
+            
+            <!-- Update the Google forms URL in action-->
+            <form   action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe5QOlldG6erBrpOj3QcmRNsS8ptGOV4mjyhug00xihJR7lJg/formResponse" 
+                    class ="form-"
+                    method="post" 
+                    target="hidden_iframe" 
+                    onsubmit="return validateForm(); " 
+                    id="myForm">
+        
+                
+                <div class="w3-section contact-col">
+                <!-- <label>Name</label> -->
+                    <input class="w3-input w3-border" type="text" placeholder="Name" id="name" required name="entry.76751244">
+                </div>
+                <div class="w3-section contact-col">
+                <!-- <label>Email</label> -->
+                    <input class="w3-input w3-border" type="text" placeholder="Email" id="email" required name="entry.1548536294">
+                </div>
+                <div class="w3-section contact-col">
+                <!-- <label>Phone</label> -->
+                    <input class="w3-input w3-border contact-col" type="text" placeholder="Phone" id="phone" required name="entry.1265124257">
+                </div>
+        
+                <div class="w3-section">
+                    <button class="w3-button w3-block w3-black w3-margin-bottom hero-btn red-btn" 
+                            type="submit"
+                            onclick="sendAlert()"
+                            style="text-align: center;"
+                            >SEND</button>
+                </div>
+            </form>
+        
+        </div>
+    </div>
+
+                    <!-- alert message success  -->
+    <div class="alert alert-success alert-dismissible fade in" id="alert">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close" >&times;</a>
+        <strong style="color: #3c763d;">Success!</strong>Your message sent successfully.
+      </div>
+
+
+                  <!--  testimonials  -->
+        <section    class="testimonials">
+            <h1>What Our Clients Says</h1>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            
+            <div    class="row">
+                <div    class="testimonial-col">
+                    <img    src="images/user1.jpg">
+                    <div>
+                        <p>
+                            Good service, fast respones and always in time
+
+                        </p>
+                        <h3> KHADIJA</h3>
+                        <i  class="fa fa-star"></i>
+                        <i  class="fa fa-star"></i>
+                        <i  class="fa fa-star"></i>
+                        <i  class="fa fa-star"></i>
+                        <i  class="fa fa-star-o"></i>
+
+                    </div>
+                </div>
+                <div    class="testimonial-col">
+                    <img    src="images/user2.jpg">
+                    <div>
+                        <p>
+                            I had the pleasure to work with you, the best customer sevice
+
+                        </p>
+                        <h3> HAMID </h3>
+                        <i  class="fa fa-star"></i>
+                        <i  class="fa fa-star"></i>
+                        <i  class="fa fa-star"></i>
+                        <i  class="fa fa-star"></i>
+                        <i  class="fa fa-star-half-o"></i>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ---call to action----- -->
+        <section class="cta">
+            <h1>Enroll For Our Various Online offers <br> Anywhere From The World</h1>
+            <a href="#contact"  class="hero-btn"> CONTACT US</a>
+        </section>
+
+        <!-- Footer -->
+        <section class="footer" id="footer">
+            <h4> About Us</h4>
+    
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusantium veritatis provident est natus cupiditate 
+                tempora maiores  fuga aut nulla saepe eaque, <br> rerum voluptatem
+                 libero atque itaque autem odio doloremque expedita.
+            </p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <!-- <p>Made width <i class="fa fa-heart-o"></i> @med__bounaga</p> -->
+
+        </section>
+        
+        
+                <!--    JavaScript for Toggle Menu  -->
+        <script>
+
+                // contact form js
+            function validateName() {
+                    var name = document.getElementById('name').value;
+                    if(name.length == 0) {
+                        alert("Name can't be blank") ;
+                        return false;
+        
+                    }
+                    if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
+                        alert("Please enter your correct name") ;//Validation Message
+                        return false;
+                    }
+                    return true;
+                    }
+        
+                    function validatePhone() {
+                    var phone = document.getElementById('phone').value;
+                    if(phone.length == 0) {
+                        alert("Phone number can't be blank") ;//Validation Message
+                        return false;
+                    }
+        
+                    if(!phone.match(/^?\d{}$/)) {
+                    alert("Please enter a correct phone number") ;//Validation Message
+                    return false;
+                    }
+        
+                    return true;
+        
+                }
+        
+                function validateEmail () {
+        
+                    var email = document.getElementById('email').value;
+                    if(email.length == 0) {
+                    alert("Email can't be blank") ;//Validation Message
+                    return false;
+        
+                    }
+        
+                    if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+                    alert("Please enter a correct email address") ;//Validation Message
+                    return false;
+        
+                    }
+        
+                    return true;
+        
+                };
+
+
+
+        </script>
+        <script src="script.js"></script>
+    </body>
+</html>
