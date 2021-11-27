@@ -90,7 +90,11 @@ nav .fa{
 @media(max-width: 700px)
     {
         .text-box h1{
-            font-size: 20px;
+            font-size: 30px;
+        }
+        .text-box p{
+            font-size: 15px;
+
         }
         .nav-links ul li{
             display: block;
@@ -345,6 +349,7 @@ h3{
 }
 /* message close sign */
 .close{
+    color: #4c824c;
     font-size: 20px;
     padding: 1%;
 }
