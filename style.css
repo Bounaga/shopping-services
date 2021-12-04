@@ -171,7 +171,9 @@ h3{
 }
 @media(max-width: 700px){
     .row{
-        flex-direction: column;
+        flex-direction: column-reverse;
+        /* flex-direction:  row-reverse; */
+
     }
 }
 
@@ -407,6 +409,11 @@ h3{
 .my-float{
 	margin-top:22px;
 }
+.float:hover{
+    background-color:#FFF;
+	color:#8a3ab9;
+    transition: .5s;
+}
 
 @media(max-width:700px){
     .float{
@@ -427,3 +434,5 @@ h3{
         margin-top:22px;
     }
 }
+
+
