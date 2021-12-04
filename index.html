@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
     <head>
         <meta   charset="UTF-8">
         <meta   http-equiv="X-UA-Compatible" content="IE=edge">
         <meta   name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="images/logo.png" type="image/x-icon">
-        <title>  Shopping Services </title>
+        <link rel="icon" href="images/logo.jpg" type="image/x-icon">
+        <title>  Samaryshop </title>
         <link   rel="stylesheet" href="style.css">
                 <!-- google font -->
         <link   rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,48 +25,53 @@
         <section    class="header">
             <nav>
                 <a href="index.html">
-                    <img    src="images/logo.png">
+                    <img    src="images/logo.jpg">
                 </a>
                 <div    class="nav-links"   id="navLinks">
                     <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
-                        <li><a href="index.html"> HOME </a></li>
-                        <li><a href="#footer"> ABOUT </a></li>
-                        <li><a href="#contact"> CONTACT </a></li>
+                        <li><a href="index.html"> الصفحة الرئيسية </a></li>
+                        <li><a href="#footer"> معلومات عنا </a></li>
+                        <li><a href="#contact"> تواصل معنا
+                        </a></li>
                     </ul>
                 </div>
                 <i class="fa fa-bars"   onclick="showMenu()"></i>
             </nav>
             <div class="text-box">
-                <h1>Shop online with no limits  </h1>
-                <p> Send us the product you want to buy, 
-                    and we take care of the payement procces <br>    
+                <h1>تسوق عبر الإنترنت بدون حدود  </h1>
+                <p> أرسل لنا المنتج الذي ترغب في شرائه, 
+                    ونحن نتكلف بعملية الدفع <br>    
                 </p>
-                <a class="hero-btn" href="#contact">CONTACT US TO KNOW MORE</a>
+                <a class="hero-btn" href="#contact">تواصل معنا لمعرفة المزيد</a>
         </section>
+
+        <a href="#" class="float">
+            <i class="fa fa-instagram my-float"></i>
+            </a>
 
         <!-- offer-->
         <section    class="offer">
-            <h1> Services we offer</h1>
+            <h1> الخدمات التي نقدمها</h1>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             
             <div    class="row">
                 <div    class="offer-col">
-                    <h3> First   </h3>
+                    <h3>    التالثة</h3>
                     <p>   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                          Error aut vero consectetur quam, unde dolorum, esse, optio
                           laudantium culpa in fuga accusantium sunt molestiae earum tempore. 
                           Sed magnam inventore consequatur.</p>
                 </div>
                 <div    class="offer-col">
-                    <h3> Second   </h3>
+                    <h3> الثانية   </h3>
                     <p>   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                          Error aut vero consectetur quam, unde dolorum, esse, optio
                           laudantium culpa in fuga accusantium sunt molestiae earum tempore. 
                           Sed magnam inventore consequatur.</p>
                 </div>
                 <div    class="offer-col">
-                    <h3> Third   </h3>
+                    <h3>  الأولى  </h3>
                     <p>   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                          Error aut vero consectetur quam, unde dolorum, esse, optio
                           laudantium culpa in fuga accusantium sunt molestiae earum tempore. 
@@ -84,7 +89,7 @@
     <div    class="w3-container w3-light-grey w3-padding-32 w3-padding-large contact-us" 
             id="contact">
         <div class="w3-content" >
-            <h1 class="contact-title">Contact Us</h1>
+            <h1 class="contact-title">تواصل معنا</h1>
         
             <script type="text/javascript">var submitted=false;</script>
             
@@ -103,19 +108,20 @@
                 
                 <div class="w3-section contact-col">
                 <!-- <label>Name</label> -->
-                    <input class="w3-input w3-border" type="text" placeholder="Name" id="name" required name="entry.1013088104">
+                    <input class="w3-input w3-border" type="text" placeholder="اسمك" id="name" required name="entry.1013088104">
                 </div>
                 <div class="w3-section contact-col">
                     <!-- <label>Name</label> -->
-                        <input class="w3-input w3-border" type="url" placeholder="Link" id="link" required name="entry.1296108726">
+                        <!-- <input class="w3-input w3-border" type="url" placeholder="Link" id="link" required name="entry.1296108726"> -->
+                        <textarea   rows="8"     placeholder=" أدخل روابط المنتجات" required name="entry.1296108726"></textarea>
                 </div>
                 <div class="w3-section contact-col">
                 <!-- <label>Email</label> -->
-                    <input class="w3-input w3-border" type="text" placeholder="Email" id="email" required name="entry.1466138328">
+                    <input class="w3-input w3-border" type="text" placeholder="البريد الإلكتروني" id="email" required name="entry.1466138328">
                 </div>
                 <div class="w3-section contact-col">
                 <!-- <label>Phone</label> -->
-                    <input class="w3-input w3-border contact-col" type="text" placeholder="Phone" id="phone" required name="entry.353508459">
+                    <input class="w3-input w3-border contact-col" type="text" placeholder="رقم الهاتف" id="phone" required name="entry.353508459">
                 </div>
         
                 <div class="w3-section">
@@ -123,7 +129,7 @@
                             type="submit"
                             onclick="sendAlert()"
                             style="text-align: center;"
-                            >SEND</button>
+                            >إرسال</button>
                 </div>
             </form>
         
@@ -133,13 +139,15 @@
                     <!-- alert message success  -->
     <div class="alert alert-success alert-dismissible fade in" id="alert">
         <a href="#" class="close" data-dismiss="alert" aria-label="close" >&times;</a>
-        <strong style="color: #3c763d;">Success!</strong> Your message sent successfully.
+        <strong style="color: #3c763d;">مبروك!</strong> تم إرسال رسالتك بنجاح
+        .
       </div>
 
 
                   <!--  testimonials  -->
         <section    class="testimonials">
-            <h1>What Our Clients Says</h1>
+            <h1>ماذا يقول عملاؤنا
+            </h1>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             
             <div    class="row">
@@ -147,10 +155,10 @@
                     <img    src="images/user1.jpg">
                     <div>
                         <p>
-                            Good service, fast respones and always in time
+                            خدمة جيدة ، ردود سريعة ودائما في الوقت المناسب
 
                         </p>
-                        <h3> KHADIJA</h3>
+                        <h3> خديجة</h3>
                         <i  class="fa fa-star"></i>
                         <i  class="fa fa-star"></i>
                         <i  class="fa fa-star"></i>
@@ -163,10 +171,10 @@
                     <img    src="images/user2.jpg">
                     <div>
                         <p>
-                            I had the pleasure to work with you, the best customer sevice
+                            كان من دواعي سروري العمل معك ، أفضل خدمة عملاء
 
                         </p>
-                        <h3> HAMID </h3>
+                        <h3> حميد </h3>
                         <i  class="fa fa-star"></i>
                         <i  class="fa fa-star"></i>
                         <i  class="fa fa-star"></i>
@@ -181,13 +189,15 @@
 
         <!-- ---call to action----- -->
         <section class="cta">
-            <h1>Enroll For Our Various Online offers <br> Anywhere From The World</h1>
-            <a href="#contact"  class="hero-btn"> CONTACT US</a>
+            <h1>أرسل لنا المنتج الذي ترغب في شرائه, ونحن نتكلف بعملية الدفع
+                <br>  في أي مكان من العالم </h1>
+            <a href="#contact"  class="hero-btn contact-cta"> تواصل معنا</a>
         </section>
 
         <!-- Footer -->
         <section class="footer" id="footer">
-            <h4> About Us</h4>
+            <h4> معلومات عنا
+            </h4>
     
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -198,7 +208,7 @@
             <div class="icons">
                 <i class="fa fa-facebook"></i>
                 <i class="fa fa-twitter"></i>
-                <i class="fa fa-instagram"></i>
+                <!-- <i class="fa fa-instagram"></i> -->
                 <i class="fa fa-linkedin"></i>
             </div>
             <!-- <p>Made width <i class="fa fa-heart-o"></i> @med__bounaga</p> -->
